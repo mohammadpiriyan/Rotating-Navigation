@@ -35,6 +35,9 @@ body {
   position: relative;
   transition: transform 0.5s linear;
 }
+.circle:hover {
+  background-color: #f76f6f;
+}
 
 .container.show-nav .circle {
   transform: rotate(-70deg);
@@ -81,15 +84,23 @@ nav ul {
 }
 
 nav ul li {
+  cursor: pointer;
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;
 }
+nav ul li:hover {
+  color: #f76f6f;
+}
 nav ul li i {
+  cursor: pointer;
   font-size: 20px;
   margin-right: 10px;
+}
+nav ul li i:hover {
+  color: #f76f6f;
 }
 
 nav ul li + li {
